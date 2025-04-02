@@ -83,18 +83,22 @@
       margin-top: 27px;
     }
     .card ul li {
-      width: 305px;
+      width: 100%;
       height: 44px;
       background-color: var(--Grey-btn);
       border-radius: 10px;
       margin-top: 17px;
+      font-weight: 600;
+    }
+    .card ul li a {
+      display: block;
+      width: 100%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-weight: 600;
     }
     .card ul li:hover {
-      cursor: pointer;
       background-color: var(--Green-active);
     }
     .card ul li:hover a {
@@ -104,7 +108,17 @@
       padding-top: 8px;
     }
     header {
-      text-align: center;
+      text-align: center; 
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 330px;
+        height: 580px;
+        padding: 20px 25px 25px;
+      }
+      .card h3 {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -128,7 +142,7 @@
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">banban</a>.
   </div>
 </body>
 </html>
